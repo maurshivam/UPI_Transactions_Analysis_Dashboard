@@ -2,6 +2,7 @@
 An interactive Excel dashboard that analyzes UPI (Unified Payments Interface) transaction data to uncover patterns in payment behavior, app usage, fraud indicators, and regional/temporal trends across India.
 
 Summary
+
 This project visualizes over 5 lakh UPI transactions worth ₹44.25 Cr, giving a real-time, filterable view into how Indians transact using UPI. The dashboard tracks transaction volume, success/failure rates, cashback disbursed, and suspected fraud, while breaking the data down by UPI app, bank, state, merchant category, transaction type, and time of day. It is designed to help stakeholders (analysts, fintech teams, or risk teams) quickly spot anomalies, peak usage windows, and the platforms/banks driving the most volume.
 
 Introduction
