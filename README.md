@@ -2,11 +2,11 @@
 An interactive Excel dashboard that analyzes UPI (Unified Payments Interface) transaction data to uncover patterns in payment behavior, app usage, fraud indicators, and regional/temporal trends across India.
 
 
-Summary
+## Summary
 
 This project visualizes over 5 lakh UPI transactions worth ₹44.25 Cr, built entirely in Microsoft Excel using PivotTables, PivotCharts, slicers, and a Filled Map visual. It gives a real-time, filterable view into how Indians transact using UPI tracking transaction volume, success/failure rates, cashback disbursed, and suspected fraud, while breaking the data down by UPI app, bank, state, merchant category, transaction type, and time of day.
 
-Introduction
+## Introduction
 
 UPI has become the backbone of digital payments in India, processing billions of transactions across banks, apps, and merchant categories. With this scale comes the need for continuous monitoring of transaction success rates, fraud signals, cashback spend, and adoption trends across geographies and demographics.
 
@@ -19,27 +19,24 @@ What's the split between P2P, P2M, bill payments, and other transaction types?
 What is the overall transaction success rate, and how much is flagged as suspicious?
 Dataset
 Volume: 5,02,887 transactions
-Fields captured: Transaction amount, UPI app, bank, transaction type (P2P/P2M/Bill Payment/etc.), merchant name & category, city, gender, cashback, status (Success/Failed/Pending/Refunded), fraud flag, timestamp (date, hour, day of week)
-Granularity: Daily-level data, with hourly and day-of-week breakdowns for behavioral analysis
 
-(Add your actual data source here e.g., synthetic/Kaggle dataset, sample generator, etc.)
-
-Tools & Tech Stack
-Microsoft Excel: dashboard design and layout
-PivotTables & PivotCharts: aggregations behind every visual
+## Tools & Tech Stack
+Microsoft Excel — dashboard design and layout
+PivotTables & PivotCharts — aggregations behind every visual
 Slicers — interactive filters (City, Gender, Merchant Name, Merchant Category)
-Filled Map (3D Map / Excel Maps): state-wise transaction visualization
-Power Query: data cleaning and transformation
-Formulas (SUMIFS, COUNTIFS, GETPIVOTDATA, etc.): KPI cards
-Conditional Formatting: heatmap (Transactions by Hours & Day)
+Filled Map (3D Map / Excel Maps) — state-wise transaction visualization
+Power Query — data cleaning and transformation (if used — update as applicable)
+Formulas (SUMIFS, COUNTIFS, GETPIVOTDATA, etc.) — KPI cards
+Conditional Formatting — heatmap (Transactions by Hours & Day)
 Key Metrics (KPI Cards)
 Metric	Value
 Total Transactions	5,02,887
 Total Amount	₹44.25 Cr
 Total Cashback	₹34.63 L
 Success Rate	91.00%
-Suspected Fraud (flagged transactions)
-Dashboard Features
+Suspected Fraud (flagged transactions)	17,089
+
+## Dashboard Features
 1. Filters Panel (Slicers)
 
 Slice the entire dashboard by:
@@ -65,7 +62,7 @@ Cred Pay: 3.0%
 WhatsApp Pay: 2.9%
 4. Transactions by Status
 
-Breakdown of transaction outcomes:
+## Breakdown of transaction outcomes:
 
 Success: 91.1%
 Failed: 7.0%
@@ -91,7 +88,7 @@ Bar chart revealing peak activity hours, with usage building through the afterno
 
 A conditional-formatting-based day-vs-hour heatmap pinpointing the exact windows (day + hour combinations) with the highest transaction value useful for identifying peak-load periods for infrastructure or fraud-monitoring planning.
 
-Key Insights
+## Key Insights
 PhonePe dominates the UPI app market with nearly half of all transaction share, followed by Google Pay and Paytm.
 
 P2M (Person-to-Merchant) transactions account for the largest share of transaction value, more than double P2P transfers reflecting UPI's growing role in everyday retail/merchant payments.
@@ -103,3 +100,12 @@ Maharashtra, Karnataka, and Delhi are the top revenue-generating states, alignin
 Transaction activity is concentrated in evening hours, suggesting most UPI usage happens post-work hours relevant for scaling server capacity and fraud-detection sensitivity during peak windows.
 
 Bank-wise transaction values are fairly evenly distributed among top private and public sector banks (HDFC, SBI, Kotak, Canara, ICICI), indicating broad-based UPI adoption rather than dependency on a single bank.
+
+Around 3.4% of all transactions (17,089) are flagged as suspected fraud a meaningful share worth monitoring closely alongside the 7% failure rate to distinguish genuine fraud from routine failed payments.
+
+## Dashboard Preview
+
+##  Summary Dashboard
+## Author
+Shivam Maurya
+
