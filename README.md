@@ -1,15 +1,16 @@
 # UPI_Transactions_Analysis_Dashboard
 An interactive Excel dashboard that analyzes UPI (Unified Payments Interface) transaction data to uncover patterns in payment behavior, app usage, fraud indicators, and regional/temporal trends across India.
 
+
 Summary
 
-This project visualizes over 5 lakh UPI transactions worth ₹44.25 Cr, giving a real-time, filterable view into how Indians transact using UPI. The dashboard tracks transaction volume, success/failure rates, cashback disbursed, and suspected fraud, while breaking the data down by UPI app, bank, state, merchant category, transaction type, and time of day. It is designed to help stakeholders (analysts, fintech teams, or risk teams) quickly spot anomalies, peak usage windows, and the platforms/banks driving the most volume.
+This project visualizes over 5 lakh UPI transactions worth ₹44.25 Cr, built entirely in Microsoft Excel using PivotTables, PivotCharts, slicers, and a Filled Map visual. It gives a real-time, filterable view into how Indians transact using UPI — tracking transaction volume, success/failure rates, cashback disbursed, and suspected fraud, while breaking the data down by UPI app, bank, state, merchant category, transaction type, and time of day.
 
 Introduction
 
 UPI has become the backbone of digital payments in India, processing billions of transactions across banks, apps, and merchant categories. With this scale comes the need for continuous monitoring — of transaction success rates, fraud signals, cashback spend, and adoption trends across geographies and demographics.
 
-This dashboard was built to simulate a real-world UPI transactions monitoring system, combining KPI tracking with deep-dive visual analysis. It answers questions like:
+This dashboard was built to simulate a real-world UPI transactions monitoring system entirely within Excel, combining KPI cards with deep-dive visual analysis. It answers questions like:
 
 Which UPI apps and banks dominate transaction volume?
 What times of day/week see the highest transaction activity?
@@ -24,18 +25,22 @@ Granularity: Daily-level data, with hourly and day-of-week breakdowns for behavi
 (Add your actual data source here — e.g., synthetic/Kaggle dataset, sample generator, etc.)
 
 Tools & Tech Stack
-Power BI — dashboard design, DAX measures, interactive visuals
-Power Query — data cleaning and transformation
-(Add SQL/Python/Excel if used for pre-processing)
-Key Metrics (KPIs)
+Microsoft Excel — dashboard design and layout
+PivotTables & PivotCharts — aggregations behind every visual
+Slicers — interactive filters (City, Gender, Merchant Name, Merchant Category)
+Filled Map (3D Map / Excel Maps) — state-wise transaction visualization
+Power Query — data cleaning and transformation (if used — update as applicable)
+Formulas (SUMIFS, COUNTIFS, GETPIVOTDATA, etc.) — KPI cards
+Conditional Formatting — heatmap (Transactions by Hours & Day)
+Key Metrics (KPI Cards)
 Metric	Value
 Total Transactions	5,02,887
 Total Amount	₹44.25 Cr
 Total Cashback	₹34.63 L
 Success Rate	91.00%
-Suspected Fraud (flagged transactions)	(count/label as per your fraud logic)
+Suspected Fraud (flagged transactions)	(confirm actual count/logic — currently mirrors total transactions in the source, so double-check this KPI's formula)
 Dashboard Features
-1. Filters Panel
+1. Filters Panel (Slicers)
 
 Slice the entire dashboard by:
 
@@ -68,7 +73,7 @@ Pending — 2.0%
 Refunded — 0.0%
 5. Transactions Amount by State
 
-Choropleth map + ranked list of transaction value by state, led by Maharashtra (₹4.54 Cr), Karnataka (₹4.51 Cr), and Delhi (₹4.48 Cr), down to Kerala (₹0.14 Cr).
+Filled map + ranked list of transaction value by state, led by Maharashtra (₹4.54 Cr), Karnataka (₹4.51 Cr), and Delhi (₹4.48 Cr), down to Kerala (₹0.14 Cr).
 
 6. Transactions Amount by Bank
 
@@ -84,7 +89,7 @@ Bar chart revealing peak activity hours, with usage building through the afterno
 
 9. Transactions Amount by Hours & Day (Heatmap)
 
-A day-vs-hour heatmap pinpointing the exact windows (day + hour combinations) with the highest transaction value — useful for identifying peak-load periods for infrastructure or fraud-monitoring planning.
+A conditional-formatting-based day-vs-hour heatmap pinpointing the exact windows (day + hour combinations) with the highest transaction value — useful for identifying peak-load periods for infrastructure or fraud-monitoring planning.
 
 Key Insights
 PhonePe dominates the UPI app market with nearly half of all transaction share, followed by Google Pay and Paytm.
