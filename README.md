@@ -88,8 +88,13 @@ A day-vs-hour heatmap pinpointing the exact windows (day + hour combinations) wi
 
 Key Insights
 PhonePe dominates the UPI app market with nearly half of all transaction share, followed by Google Pay and Paytm.
+
 P2M (Person-to-Merchant) transactions account for the largest share of transaction value, more than double P2P transfers — reflecting UPI's growing role in everyday retail/merchant payments.
+
 91% success rate indicates a generally healthy transaction pipeline, though the ~7% failure rate is worth deeper root-cause analysis (bank-side vs. app-side failures).
+
 Maharashtra, Karnataka, and Delhi are the top revenue-generating states, aligning with urban digital payment adoption.
+
 Transaction activity is concentrated in evening hours, suggesting most UPI usage happens post-work hours — relevant for scaling server capacity and fraud-detection sensitivity during peak windows.
+
 Bank-wise transaction values are fairly evenly distributed among top private and public sector banks (HDFC, SBI, Kotak, Canara, ICICI), indicating broad-based UPI adoption rather than dependency on a single bank.
