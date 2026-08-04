@@ -106,9 +106,7 @@ Around 3.4% of all transactions (17,089) are flagged as suspected fraud a meanin
 ##  Summary Dashboard
 ## 📊 Dashboard Preview
 
-<p align="center">
-  <img src="Images/Dashboard.png" alt="UPI Transactions Dashboard" width="100%">
-</p>
+![Dashboard](./UPI_Transactions_Analysis_Dashboard.png)
 
 ## Author
 Shivam Maurya
