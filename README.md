@@ -1,4 +1,4 @@
-# UPI_Transactions_Analysis_Dashboard
+# UPI_Transactions_Dashboard_Analysis
 An interactive Excel dashboard that analyzes UPI (Unified Payments Interface) transaction data to uncover patterns in payment behavior, app usage, fraud indicators, and regional/temporal trends across India.
 
 
